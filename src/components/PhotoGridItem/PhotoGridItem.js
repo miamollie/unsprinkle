@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import OptimisedImage from '../OptimisedImage/OptimisedImage';
 
 const PhotoGridItem = ({ id, src, alt, tags }) => {
   return (
     <article>
       <Anchor href={`/photos/${id}`}>
-        <Image src={src} />
+        <OptimisedImage src={src} imgComponent={<Image src={src} />} />
       </Anchor>
       <Tags>
         {tags.map((tag) => (

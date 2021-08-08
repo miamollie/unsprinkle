@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-
+import OptimisedImage from '../OptimisedImage/OptimisedImage';
 const Hero = () => {
   return (
     <Wrapper>
-      <HeroImage src="/images/hero-img.jpg" />
+      <OptimisedImage src={"/images/hero-img.jpg"} imgComponent={<HeroImage src="/images/hero-img.jpg" />} />
       <Swoop src="/swoop.svg" />
     </Wrapper>
   );
