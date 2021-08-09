@@ -4,8 +4,8 @@ import OptimisedImage from '../OptimisedImage/OptimisedImage';
 const Hero = () => {
   return (
     <Wrapper>
-      <OptimisedImage src={"/images/hero-img.jpg"} imgComponent={<HeroImage src="/images/hero-img.jpg" />} />
-      <Swoop src="/swoop.svg" />
+      <OptimisedImage src={"/images/hero-img.jpg"} imgComponent={<HeroImage alt="" role="presentational" src="/images/hero-img.jpg" />} />
+      <Swoop src="/swoop.svg" alt="" role="presentational" />
     </Wrapper>
   );
 };
