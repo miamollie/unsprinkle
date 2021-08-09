@@ -33,17 +33,22 @@ const Image = styled.img`
 `;
 
 const Tags = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;
 
 const Tag = styled.li`
   padding: 4px 8px;
+  display: inline-block;
   background: var(--color-gray-300);
   font-size: 0.875rem;
   font-weight: 475;
   color: var(--color-gray-800);
+  margin: 0 4px;
+  &:last-child {
+    margin-right: 0;
+  }
 `;
 
 export default PhotoGridItem;
